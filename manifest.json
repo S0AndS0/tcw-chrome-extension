@@ -4,32 +4,31 @@
   "description": "Save & organize code snippets that work",
   "permissions": ["declarativeContent", "activeTab"],
   "background": {
-    "scripts": ["background.js", "popup.js"],
+    "scripts": ["app/js/background.js", "app/js/popup.js"],
     "persistent": false
   },
   "content_scripts": [{
     "matches": ["<all_urls>"],
-    "js": ["content.js"],
+    "js": ["app/js/content.js"],
     "exclude_matches": ["*://www.thiscodeworks.com/*"]
   }],
   "page_action": {
-    "default_popup": "popup.html",
+    "default_popup": "app/popup.html",
     "default_icon": {
-      "16": "images/tcw_16.png",
-      "32": "images/tcw_32.png",
-      "48": "images/tcw_48.png",
-      "128": "images/tcw_128.png"
+      "16": "app/images/tcw_16.png",
+      "32": "app/images/tcw_32.png",
+      "48": "app/images/tcw_48.png",
+      "128": "app/images/tcw_128.png"
     }
   },
   "icons": {
-    "16": "images/tcw_16.png",
-    "32": "images/tcw_32.png",
-    "48": "images/tcw_48.png",
-    "128": "images/tcw_128.png"
+    "16": "app/images/tcw_16.png",
+    "32": "app/images/tcw_32.png",
+    "48": "app/images/tcw_48.png",
+    "128": "app/images/tcw_128.png"
   },
   "web_accessible_resources": [
-    "images/saveicon.png"
+    "app/images/saveicon.png"
    ],
   "manifest_version": 2
 }
-

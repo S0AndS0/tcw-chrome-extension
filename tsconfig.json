@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "lib": ["dom","es2017"],
+    "outDir": "app/js",
+    "sourceMap": true,
+    "moduleResolution": "node"
+  },
+  "types": [
+    "chrome"
+  ],
+  "include": ["ts/**/*"]
+}

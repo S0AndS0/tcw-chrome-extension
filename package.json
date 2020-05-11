@@ -1,0 +1,29 @@
+{
+  "name": "tcw-chrome-extension",
+  "version": "0.0.1",
+  "description": "Save and collect code snippets that work on the web",
+  "main": "index.js",
+  "scripts": {
+    "ts-build": "tsc --build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/magical-mishka/tcw-chrome-extension.git"
+  },
+  "keywords": [
+    "Chrome",
+    "Extention",
+    "Programming",
+    "Developer"
+  ],
+  "author": "magical-mishka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magical-mishka/tcw-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/magical-mishka/tcw-chrome-extension#readme",
+  "devDependencies": {
+    "@types/chrome": "0.0.107",
+    "typescript": "^3.8.3"
+  }
+}
